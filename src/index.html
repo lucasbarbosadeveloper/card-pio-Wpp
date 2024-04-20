@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/output.css" />
+
+    <!-- font awersome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- font poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="./script.js" defer></script>
+    <title>Cardápio online</title>
+  </head>
+  <body class="h-full w-full font-poppins" id="cBody">
+    <header class="h-[28.5rem] w-full text-white">
+      <div
+        class="flex h-full flex-col items-center justify-center bg-bg bg-cover bg-center"
+      >
+        <img
+          src="../assets/hamb-1.png"
+          alt="img hamburger"
+          class="mb-10 h-48 w-48 rounded-full"
+        />
+
+        <h1 class="mb-3 text-3xl font-bold md:text-4xl">Red Burger</h1>
+        <span class="md:text-lg">Rua dev sucesso, 43, Maracanaú, CE</span>
+        <span
+          class="mt-3 rounded-md bg-c_green p-2 font-semibold md:text-lg"
+          id="timeCard"
+          >Ter á Dom - 18:00 as 22:00</span
+        >
+      </div>
+    </header>
+
+    <main class="mx-auto mb-16 mt-10 w-full max-w-screen-xl">
+      <section class="w-full px-2">
+        <h2 class="text-center text-2xl font-bold md:text-3xl">
+          Conheça nosso menu
+        </h2>
+
+        <div class="my-5 grid w-full gap-4 md:grid-cols-2">
+          <div class="flex rounded-md p-1 shadow-custonShadow">
+            <div>
+              <img
+                src="../assets/hamb-2.png"
+                alt="img hamburger"
+                class="max-w-36 rounded-md"
+              />
+            </div>
+
+            <div class="col-span-2 flex flex-col justify-between pl-2">
+              <div>
+                <h3
+                  class="mb-1 text-sm font-semibold md:text-base"
+                  data-id="cheeseBurgerDuplo"
+                  data-product="Cheese Burger Duplo"
+                >
+                  Cheese Burger Duplo
+                </h3>
+
+                <p class="text-xs md:text-sm">
+                  Pão levinho de fermentação natural da Trigou, burger 160g,
+                  queijo prato e maionese da casa
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between">
+                <span class="font-semibold md:text-lg" data-price="35">
+                  R$ 35.00
+                </span>
+
+                <button
+                  class="btnAddCart h-full cursor-pointer rounded-md bg-gray-700 px-4 text-white duration-200 hover:scale-125"
+                >
+                  <i class="fa-solid fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex rounded-md p-1 shadow-custonShadow">
+            <div>
+              <img
+                src="../assets/hamb-3.png"
+                alt="img hamburger"
+                class="max-w-36 rounded-md"
+              />
+            </div>
+
+            <div class="col-span-2 flex flex-col justify-between pl-2">
+              <div>
+                <h3
+                  class="mb-1 text-sm font-semibold md:text-base"
+                  data-id="cheeseBacon"
+                  data-product="Cheese Bacon"
+                >
+                  Cheese Bacon
+                </h3>
+                <p class="text-xs md:text-sm">
+                  Pão levinho de fermentação natural da Trigou, burger 160g,
+                  queijo prato e maionese da casa
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between">
+                <span class="font-semibold md:text-lg" data-price="39">
+                  R$ 39.00
+                </span>
+
+                <button
+                  class="btnAddCart h-full cursor-pointer rounded-md bg-gray-700 px-4 text-white duration-200 hover:scale-125"
+                >
+                  <i class="fa-solid fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex rounded-md p-1 shadow-custonShadow">
+            <div>
+              <img
+                src="../assets/hamb-4.png"
+                alt="img hamburger"
+                class="max-w-36 rounded-md"
+              />
+            </div>
+
+            <div class="col-span-2 flex flex-col justify-between pl-2">
+              <div>
+                <h3
+                  class="mb-1 text-sm font-semibold md:text-base"
+                  data-id="cheeseSalad"
+                  data-product="Cheese Salad"
+                >
+                  Cheese Salad
+                </h3>
+
+                <p class="text-xs md:text-sm">
+                  Pão levinho de fermentação natural da Trigou, burger 160g,
+                  queijo prato e maionese da casa
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between">
+                <span class="font-semibold md:text-lg" data-price="32">
+                  R$ 32.00
+                </span>
+                <button
+                  class="btnAddCart h-full cursor-pointer rounded-md bg-gray-700 px-4 text-white duration-200 hover:scale-125"
+                >
+                  <i class="fa-solid fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex rounded-md p-1 shadow-custonShadow">
+            <div>
+              <img
+                src="../assets/hamb-5.png"
+                alt="img hamburger"
+                class="max-w-36 rounded-md"
+              />
+            </div>
+
+            <div class="col-span-2 flex flex-col justify-between pl-2">
+              <div>
+                <h3
+                  class="mb-1 text-sm font-semibold md:text-base"
+                  data-id="smashBurger"
+                  data-product="Smash Burger"
+                >
+                  Smash Burger
+                </h3>
+                <p class="text-xs md:text-sm">
+                  Pão levinho de fermentação natural da Trigou, burger 160g,
+                  queijo prato e maionese da casa
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between">
+                <span class="font-semibold md:text-lg" data-price="26">
+                  R$ 26.00
+                </span>
+                <button
+                  class="btnAddCart h-full cursor-pointer rounded-md bg-gray-700 px-4 text-white duration-200 hover:scale-125"
+                >
+                  <i class="fa-solid fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold">Bebidas</h2>
+
+        <div class="mt-3 grid w-full gap-4 md:grid-cols-2">
+          <div class="flex rounded-md p-1 shadow-custonShadow">
+            <div>
+              <img
+                src="../assets/refri-1.png"
+                alt="img hamburger"
+                class="max-w-36 rounded-md"
+              />
+            </div>
+
+            <div class="flex w-full flex-col justify-between pl-2">
+              <div>
+                <h3
+                  class="mb-1 text-sm font-semibold md:text-base"
+                  data-id="cocaColaLata"
+                  data-product="Coca Cola Lata"
+                >
+                  Coca Cola Lata
+                </h3>
+              </div>
+
+              <div class="flex w-full items-center justify-between">
+                <span class="font-semibold md:text-lg" data-price="6">
+                  R$ 6.00
+                </span>
+                <button
+                  class="btnAddCart h-full cursor-pointer rounded-md bg-gray-700 px-4 text-white duration-200 hover:scale-125"
+                >
+                  <i class="fa-solid fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex rounded-md p-1 shadow-custonShadow">
+            <div>
+              <img
+                src="../assets/refri-2.png"
+                alt="img hamburger"
+                class="max-w-36 rounded-md"
+              />
+            </div>
+
+            <div class="flex w-full flex-col justify-between pl-2">
+              <div>
+                <h3
+                  class="mb-1 text-sm font-semibold md:text-base"
+                  data-id="guaranaAntarticaLata"
+                  data-product="Guaraná Antártica Lata"
+                >
+                  Guaraná Antártica Lata
+                </h3>
+              </div>
+
+              <div class="flex items-center justify-between">
+                <span class="font-semibold md:text-lg" data-price="5">
+                  R$ 5.00
+                </span>
+                <button
+                  class="btnAddCart h-full cursor-pointer rounded-md bg-gray-700 px-4 text-white duration-200 hover:scale-125"
+                >
+                  <i class="fa-solid fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <button
+      class="fixed bottom-0 left-0 h-14 w-full cursor-pointer bg-c_red font-bold text-white duration-200 hover:bg-red-800"
+      id="cartShoppingBtn"
+    >
+      <span
+        ><span id="lengthCard">( 0 )</span> Veja seu carrinho
+        <i class="fa-solid fa-cart-shopping"></i
+      ></span>
+    </button>
+
+    <div
+      class="fixed top-0 hidden h-full w-full overflow-y-auto bg-black/50"
+      id="cModal"
+    >
+      <div
+        class="z-10 m-auto flex w-11/12 max-w-xl flex-col justify-between rounded-lg bg-white p-5"
+        id="childrenModal"
+      >
+        <div class="mb-3">
+          <div
+            class="mb-2 hidden text-center font-bold text-red-500"
+            id="restaurantClosed"
+          >
+            Restaurante fechado no momento!
+          </div>
+          <h2 class="mb-4 text-center text-xl font-bold md:text-2xl">
+            Seu carrinho
+          </h2>
+
+          <div class="flex flex-col gap-4 text-center" id="listProducts">
+            <!-- lista de produtos do carrinho -->
+          </div>
+        </div>
+
+        <div>
+          <span class="text-lg font-bold" id="total">
+            <!-- total -->
+          </span>
+        </div>
+
+        <div class="mt-5">
+          <form id="form">
+            <label for="address" class="font-semibold">
+              Endereço de entrega</label
+            >
+            <textarea
+              name="address"
+              id="address"
+              rows="3"
+              class="mt-1 w-full rounded-md border-2 border-gray-200 p-2 text-lg"
+              placeholder="Digite seu endereço..."
+            ></textarea>
+
+            <div class="hidden text-start text-red-500" id="alertTextArea">
+              Digite seu endereço!
+            </div>
+
+            <div class="mt-5 flex justify-between">
+              <span
+                class="cursor-pointer rounded-md bg-c_red p-2 font-semibold text-white duration-200 hover:scale-110 hover:bg-red-800"
+                id="btnClose"
+              >
+                Fechar
+              </span>
+              <button
+                type="submit"
+                class="rounded-md bg-c_green p-2 font-semibold text-white duration-200 hover:scale-110 hover:bg-green-700"
+                id="checkout"
+              >
+                Finalizar pedido
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
