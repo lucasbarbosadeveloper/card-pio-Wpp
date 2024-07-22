@@ -25,15 +25,15 @@ const timeCardColor = () => {
   const currentHour = currentTime.getHours();
   const currentDay = currentTime.getDay();
 
-  if ((currentHour < 18 || currentHour > 21) || (currentDay === 1)) {
-    timeCard.classList.remove('bg-c_green');
-    timeCard.classList.add('bg-c_red');
+  // if ((currentHour < 18 || currentHour > 21) || (currentDay === 1)) {
+  //   timeCard.classList.remove('bg-c_green');
+  //   timeCard.classList.add('bg-c_red');
 
-    restaurantClosed.classList.remove('hidden');
-    btnCheckout.classList.remove('bg-c_green', 'text-white', 'duration-200', 'hover:scale-110', 'hover:bg-green-700');
-    btnCheckout.classList.add('bg-gray-300');
-    btnCheckout.disabled = true;
-  };
+  //   restaurantClosed.classList.remove('hidden');
+  //   btnCheckout.classList.remove('bg-c_green', 'text-white', 'duration-200', 'hover:scale-110', 'hover:bg-green-700');
+  //   btnCheckout.classList.add('bg-gray-300');
+  //   btnCheckout.disabled = true;
+  // };
 
 };
 timeCardColor();
